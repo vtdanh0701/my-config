@@ -1,0 +1,205 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "files.watcherExclude": {
+      "**/build/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+      "**/.hg/store/**": true
+    },
+    "files.exclude": {
+      "apollo-overrides": true,
+      "release-info": true,
+      "src/*/build": false,
+      "build": false,
+      "env": true,
+      "packageInfo*": true,
+      ".bemol": true,
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+    },
+    "search.exclude": {
+      "env": true,
+      "src/*/build": true,
+      "build": true,
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true
+    },
+    "[brazilPackageConfig]": {
+      "workbench.editor.languageDetection": false
+    },
+    "files.autoSave": "onFocusChange",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotionMarkerooundColor": "#020202",
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<tab>"],
+        "commands": ["workbench.action.nextEditor"]
+      },
+      {
+        "before": ["<S-tab>"],
+        "commands": ["workbench.action.previousEditor"]
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+      }, 
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+      },
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["<C-j>"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["<C-k>"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": [">"],
+        "after": [">", "g", "v"]
+      },
+      {
+        "before": ["<"],
+        "after": ["<", "g", "v"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.files.save"]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "commands": ["revealInExplorer"]
+      },
+      {
+        "before": ["<leader>", "h"],
+        "after": ["_"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "after": ["$"]
+      },
+      {
+        "before": ["<leader>", "p"],
+        "commands": ["workbench.action.quickOpen"]
+      },
+      {
+        "before": ["<leader>", ";"],
+        "commands": ["workbench.action.terminal.toggleTerminal"]
+      },
+      // Window management
+      {
+        "before": ["<leader>", "s", "v"],
+        "commands": ["workbench.action.splitEditor"]
+      },
+      {
+        "before": ["<leader>", "s", "h"],
+        "commands": ["workbench.action.splitEditorDown"]
+      },
+      // Go to definition
+      {
+        "before": ["g", "d"],
+        "commands": ["editor.action.revealDefinition"]
+      },
+      {
+        "before": ["g", "r"],
+        "commands": ["editor.action.goToReferences"]
+      },
+      {
+        "before": ["g", "i"],
+        "commands": ["editor.action.goToImplementation"]
+      },
+      {
+        "before": ["g", "e"],
+        "commands": ["editor.action.marker.nextInFiles"]
+      },
+      {
+        "before": ["g", "E"],
+        "commands": ["editor.action.marker.prevInFiles"]
+      }
+    ],
+    "vim.leader": "<space>",
+  
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false,
+      // VS Code new marker @ next occurence
+      "<C-c>": false,
+      // Cut
+      "<C-x>": false,
+      // Paste
+      "<C-v>": false,
+      "<C-z>": false,
+      "<C-y>": false
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.lineNumbers": "relative",
+    "[typescript]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "editor.minimap.enabled": false,
+    "prettier.tabWidth": 4,
+    "terminal.integrated.inheritEnv": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.bracketSameLine": true,
+    "prettier.printWidth": 140,
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[java]": {
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.defaultFormatter": "redhat.java"
+    },
+    "boot-java.change-detection.on": true,
+    "java.debug.settings.hotCodeReplace": "auto",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.enable": {
+      "*": false
+    }
+  }
