@@ -10,7 +10,7 @@ autoload -Uz compinit && compinit -i
 export TERM="xterm-256color"
 
 # Path to oh-my-zsh installation
-export ZSH=/Users/danhvuon/.oh-my-zsh
+export ZSH=/Users/danvuong/.oh-my-zsh
 
 
 
@@ -81,11 +81,11 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 source $ZSH/oh-my-zsh.sh
-source /Users/danhvuon/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+source /Users/danvuong/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 
 # vi mode
 bindkey -v
-export KEYTIMEOUT=1
+export KEYTIMEOUT=20
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -106,4 +106,10 @@ zle-line-init() {
 }
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
+
+zle -N enter-vi-cmd-mode
+bindkey -M viins 'jk' enter-vi-cmd-mode
+function enter-vi-cmd-mode() {
+  zle vi-cmd-mode
+}
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
